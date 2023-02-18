@@ -1,0 +1,24 @@
+docker run -d -p 6379:6379 --name asprun-redis redis
+
+docker logs -f asprun-redis
+
+--inter active terminal
+docker exec -it asprun-redis /bin/bash
+
+--redis cli commands using interactive terminal
+redis-cli
+
+--test
+>ping
+pong
+
+--
+set [key] [value]
+>set name uzair
+
+get [key]
+>get name
+
+
+-- to exit 
+>exit
